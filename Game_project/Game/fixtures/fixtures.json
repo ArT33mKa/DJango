@@ -1,0 +1,60 @@
+[
+  {
+    "model": "Game.genre",
+    "pk": 1,
+    "fields": {
+      "title": "Action"
+    }
+  },
+  {
+    "model": "Game.genre",
+    "pk": 2,
+    "fields": {
+      "title": "RPG"
+    }
+  },
+  {
+    "model": "Game.game",
+    "pk": 1,
+    "fields": {
+      "title": "Cyber Battle",
+      "description": "Dynamic cyberpunk action game",
+      "memory_required": "8.00",
+      "processor_required": "Intel i5",
+      "videocard_required": "GTX 1060",
+      "count_installs": 1200,
+      "genre": 1
+    }
+  },
+  {
+    "model": "Game.game",
+    "pk": 2,
+    "fields": {
+      "title": "Dragon World",
+      "description": "Fantasy RPG with dragons",
+      "memory_required": "16.00",
+      "processor_required": "Ryzen 5",
+      "videocard_required": "RTX 2060",
+      "count_installs": 3400,
+      "genre": 2
+    }
+  },
+  {
+    "model": "Game.comment",
+    "pk": 1,
+    "fields": {
+      "text": "Very cool game!",
+      "nickname": "PlayerOne",
+      "game": 1
+    }
+  },
+  {
+    "model": "Game.comment",
+    "pk": 2,
+    "fields": {
+      "text": "Loved the story",
+      "nickname": "DragonSlayer",
+      "game": 2
+    }
+  }
+]
